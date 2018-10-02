@@ -1,0 +1,57 @@
+#wrapper{
+    margin: 0;
+    padding: 0;
+    width: 1045px;
+    background-color: purple;
+}
+/* #newS{
+width: 600px;
+background-color: aqua;
+height: 600px;
+} */
+.elem{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+#one
+{
+    background-color: blueviolet;
+    
+}
+#two {
+    background-color: blue;
+    
+}
+#three{
+    background-color: orangered;
+     
+}
+#for{
+    background-color: orchid;
+    
+}
+#five {
+    background-color: olive;
+    
+}
+#six {
+    background-color: rosybrown;
+     
+}
+#seven {
+    background-color: maroon;
+    
+}
+#eight {
+    background-color: mediumaquamarine;
+     
+}
+#nine {
+    background-color: darkorange;
+    
+}
+#ten {
+    background-color:plum ;
+    
+}

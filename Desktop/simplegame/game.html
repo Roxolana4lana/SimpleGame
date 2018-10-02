@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Game</title>
+    <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="allSquares" onclick="myFunction()">
+        <div id="one"  class="elem"></div>
+        
+        <div id="two" class="elem"></div>
+        <div id="three" class="elem"></div>
+        <div id="for"class="elem"></div>
+        <div id="five" class="elem"></div>
+        
+        <div id="six" class="elem"></div>
+        <div id="seven" class="elem"></div>
+        <div id="eight" class="elem"></div>
+        <div id="nine" class="elem"></div>
+        <div id="ten" class="elem"></div>
+        
+    </div>
+    <div id="newS"></div>
+    </div>
+    <script>
+         function getRandomColor() {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+       
+           // var colNew = getRandomColor();
+           function changeColor(){
+        var squares = document.getElementsByClassName('elem');
+        Array.from(squares).forEach(function(square){
+            square.addEventListener('mouseover', function(e){
+e.target.style.backgroundColor = getRandomColor();
+            });
+        });
+           }
+        function myFunction() {
+                var nEle = document.querySelector('#allSquares');
+                var clon = nEle.cloneNode(true);
+                document.getElementById('newS').appendChild(clon);
+          changeColor();
+        
+
+            }
+
+
+
+    </script>
+
+</body>
+</html>
